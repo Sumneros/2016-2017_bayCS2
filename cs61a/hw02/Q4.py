@@ -1,3 +1,15 @@
+def square(x):
+    return x * x
+
+def triple(x):
+    return 3 * x
+
+def identity(x):
+    return x
+
+def increment(x):
+    return x + 1
+
 def compose1(f, g):
     """Return a function h, such that h(x) = f(g(x))."""
     def h(x):

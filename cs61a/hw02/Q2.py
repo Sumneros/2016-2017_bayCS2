@@ -1,5 +1,18 @@
 from operator import add, mul
 
+def square(x):
+    return x * x
+
+def triple(x):
+    return 3 * x
+
+def identity(x):
+    return x
+
+def increment(x):
+    return x + 1
+
+
 def accumulate(combiner, base, n, term):
     """Return the result of combining the first N terms in a sequence.  
     The terms to be combined are TERM(1), TERM(2), ..., TERM(N).  COMBINER 
