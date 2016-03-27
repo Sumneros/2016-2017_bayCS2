@@ -1,22 +1,5 @@
 # homework
-This is where homework assignments will be posted and submitted.
-
-#First CS2 Assignment. Due 3/25/2016 10:05 am
-Read closely the cs61a textbook Composing Programs (CP) sections 1.1 and 1.2;
-Read the cs61a Week 1 lecture notes (LN) called Functions;
-Read closely CP 1.3 and 1.4;
-Read LN Names;
-Do cs61a Homework 1:
-Cole has kindly posted source files for cs61a Homework 1, Questions 2, 4, 5, 6 and 7. You will find them in homework/cs61a/hw01. Please read through section 1.4 of Composing Programs, and answer Questions 2, 4, 5 and 6 by editing
-the corresponding source files.  Question 7 is optional.
-
-#Second CS2 Assignment. Due 3/31/2016 8:35 am 
-Complete the first CS2 assignment. ;)
-Read closely CP 1.5;
-Read LN Control;
-Read closely CP 1.6;
-Read LN Higher-Order Functions;
-Complete cs61a Lab1: Expressions and Control.
+For due dates and details of assignments in this class, see the Bay School community site page for this class!
 
 # How to use git
 You are reading this becuase we have created an organization called "15-16bayCS2", and a repository within that organization called "homework".  The homework respository has several "branches", one called "master" and one for each student.  If you haven't already, ask a git-maven to create a branch of master called [yourname].  Open a bash terminal on your laptop, navigate to your Documents directory and execute the following commands to create a local version of your branch on your laptop:  
