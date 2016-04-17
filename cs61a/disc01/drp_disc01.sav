@@ -16,6 +16,7 @@ def wears_jacket(temp, raining):
     True
     """
 ##### Your code here #####  
+    return raining or temp < 60
 
 
 # Question 2. To handle discussion section overflow ...
@@ -35,6 +36,14 @@ def handle_overflow(s1, s2):
     """
 ##### Your code here  #####    
 
+    if s1 > 29:
+        if s2 > 29: print("No space left in either section")
+        elif s2 == 29: print ("1 spot in Section 2.")
+        else: print (str(30 - s2), "spots left in Section 2.")
+    elif s2 > 29:
+        if s1 == 30: print("1 spot in Section 1.")
+        elif s1 < 29: print (str(30 - s1), "spots left in Section 1.")
+    else: print("No overflow")
 
 # 1.5 Questions
 
@@ -70,7 +79,10 @@ def is_prime(n):
 
     """
 ##### Your code here ########
-
+    for k in range(2, n):
+        if mod(n, k) == 0: return False
+    return n != 0 and n != 1
+    
 # 1.6 Have Some More Control
 # Question 1: Implement fizzbuzz:
 def fizzbuzz(n):
@@ -96,7 +108,14 @@ def fizzbuzz(n):
     True
     """
 ##### Your code here #####
-
+    for i in range(1, n + 1):
+        fizz = mod(i, 3) == 0
+        buzz = mod(i, 5) == 0
+        if fizz and not buzz: print("fizz")
+        elif buzz and not fizz: print("buzz")
+        elif buzz and fizz: print("fizzbuzz")
+        else: print(i)
+        
 # Question 2: Fill in the choose function (ways to choose k from n)
 
 def choose(n, k):
@@ -110,7 +129,15 @@ def choose(n, k):
     38760
     """
 ##### Your code here #####
-
+    num, denom, i, j = 1, 1, 0, 0
+    while le(i, sub(k, 1)):
+        num = mul(num, sub(n, i))
+        i = add(i, 1)
+    while lt(j, k):
+        denom = mul(denom, sub(k, j))
+        j = add(j, 1)
+    return floordiv(num, denom)
+    
 # 2.2 Questions
 # Question 1 requires no coding
 # Question 2: Implement keep_ints
@@ -124,5 +151,9 @@ def keep_ints(cond, n):
     4
     """
 ##### Your code here #####
-
+    i = 1
+    while le(i, n):
+        if cond(i): print(i)
+        i = add(i, 1)
+    
 # done!
