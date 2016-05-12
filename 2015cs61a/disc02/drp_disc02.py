@@ -17,15 +17,19 @@ def countdown(n):
     
 # 1.1.2
 # Is there an easy way to change COUNTDOWN to count up instead?
-def countup(n):
+# def countup(n):
     """
     >>> countup(3)
     1
     2
     3
     """
-# YOUR CODE HERE #
-
+    # print(n)
+    # if i == n:
+    #     return
+    # return countup(n + 1)
+    
+    
 # 1.1.3
 # Write a procedure expt(base, power), which implements the exponent
 # function. Assume power is always an integer. Use recursion, not pow!
@@ -37,7 +41,10 @@ def expt(base, power):
     >>> expt(2, 3)
     8
     """
-# YOUR CODE HERE #
+    if power == 1:
+        return base
+    else:
+        return base * expt(base, power - 1)
 
 # 1.1.4
 # Fill in the IS_PRIME function, which returns True if n is a prime number
@@ -51,7 +58,7 @@ def is_prime(n):
     >>> is_prime(1)
     False
     >>> is_prime(2)
-    False
+    True
     >>> is_prime(3)
     True
     >>> is_prime(4)
@@ -97,7 +104,7 @@ rec(3, 2)
 # 2.1 Exercises
 # 2.1.1 I want to go up a flight of stairs that has n steps. I can either
 # take 1 or 2 steps each time. How many different ways can I go up this
-# flight of stairs? Write a functioncount stair ways that solves this problem.
+# flight of stairs? Write a function COUNT_STAIR_WAYS that solves this problem.
 
 def count_stair_ways(n):
     """
