@@ -17,17 +17,17 @@ def countdown(n):
     
 # 1.1.2
 # Is there an easy way to change COUNTDOWN to count up instead?
-# def countup(n):
+def countup(n):
     """
     >>> countup(3)
     1
     2
     3
     """
-    # print(n)
-    # if i == n:
-    #     return
-    # return countup(n + 1)
+    if i == n:
+        print(n)
+        return
+    return countup(i + 1)
     
     
 # 1.1.3
@@ -108,9 +108,14 @@ rec(3, 2)
 
 def count_stair_ways(n):
     """
-    >>> count_stair_ways(6):
+    >>> count_stair_ways(6)
     13
     """
-# YOUR CODE GOES HERE #
+    if n == 1:
+        return 1
+    elif n == 2:
+        return 2
+    return count_stair_ways(n - 1) + count_stair_ways(n - 2)
+
 
 # I think that's enough for now - drP
