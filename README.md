@@ -1,5 +1,5 @@
 # homework
-For due dates and details of assignments in this class, see the Bay School community site page for this class!
+For due dates and details of assignments, please see the Bay School community site page for this class!
 
 # How to use git
 You are reading this becuase we have created an organization called "15-16bayCS2", and a repository within that organization called "homework".  The homework respository has several "branches", one called "master" and one for each student.  If you haven't already, ask a git-maven to create a branch of master called [yourname].  Open a bash terminal on your laptop, navigate to your Documents directory and execute the following commands to create a local version of your branch on your laptop:  
