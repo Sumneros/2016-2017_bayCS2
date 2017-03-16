@@ -2,22 +2,24 @@
 For due dates and details of assignments, please see the Bay School community site page for this class!
 
 # How to use git
-You are reading this becuase we have created an organization called "15-16bayCS2", and a repository within that organization called "homework".  The homework respository has several "branches", one called "master" and one for each student.  If you haven't already, ask a git-maven to create a branch of master called [yourname].  Open a bash terminal on your laptop, navigate to your Documents directory and execute the following commands to create a local version of your branch on your laptop:  
+You are reading this becuase we have created an organization called "bayCS2", and a repository within that organization called "2016-2017_bayCS2".  You have been invited to be an owner of this repository, so act responsibly.
+The homework respository has several "branches", one called "master" and, eventually, one for each student.  If you haven't already, create a branch of master called [yourfirstname].
+Open a bash terminal in Cloud9, make sure you are in your workspace directory and execute the following commands.  This creates a "local" version of your branch in your Cloud9 workspace:  
 ```
-git clone https://github.com/15-16bayCS2/homework.git
-cd homework
-git branch [yourname]
-git checkout [yourname]
-git pull origin [yourname]
+git clone https://github.com/bayCS2/2016-2017_bayCS2.git
+cd 2016-2017_bayCS2
+git branch [yourbranchname]
+git checkout [yourbranchname]
+git pull origin [yourbranchname]
 ```
 When there are new homework questions in master, or any other changes, e.g., to this README.md file, pull from master to your local branch, and push from your local branch to your branch on GitHub: 
 ```
 git pull origin master
-git push origin [yourname]
+git push origin [yourbranchname]
 ```
 So now you might actually want to do some homework.  If you ...
 ```
-cd ~/Documents/homework/cs61a/hw01
+cd ~/workspace/2016-2017_bayCS2/cs61a/hw01
 ls
 ```
 ... you will see a list of *.py files, one for each assigned question.  Open one for editing using, e.g.:
