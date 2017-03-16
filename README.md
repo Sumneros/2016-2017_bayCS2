@@ -1,4 +1,4 @@
-# homework
+# Homework Assignments for 2016-2017 Bay CS2
 For due dates and details of assignments, please see the Bay School community site page for this class!
 
 # How to use git
