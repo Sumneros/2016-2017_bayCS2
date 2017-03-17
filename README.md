@@ -10,7 +10,7 @@ git clone https://github.com/bayCS2/2016-2017_bayCS2.git
 cd 2016-2017_bayCS2
 git branch [yourbranchname]
 git checkout [yourbranchname]
-git pull origin [yourbranchname]
+git push origin [yourbranchname]
 ```
 When there are new homework questions in master, or any other changes, e.g., to this README.md file, pull from master to your local branch, and push from your local branch to your branch on GitHub: 
 ```
