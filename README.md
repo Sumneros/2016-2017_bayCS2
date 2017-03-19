@@ -2,7 +2,7 @@
 For due dates and details of assignments, please see the Bay School community site page for this class!
 
 # How to use git
-You are reading this becuase we have created an organization called "bayCS2", and a repository within that organization called "2016-2017_bayCS2".  You have been invited to be an owner of this repository, so act responsibly.
+You are reading this because we have created an organization called "bayCS2", and a repository within that organization called "2016-2017_bayCS2".  You have been invited to be an owner of this repository, so act responsibly.
 The homework respository has several "branches", one called "master" and, eventually, one for each student.  If you haven't already, create a branch of master called [yourfirstname].
 Open a bash terminal in Cloud9, make sure you are in your workspace directory and execute the following commands.  This creates a "local" version of your branch in your Cloud9 workspace:  
 ```
