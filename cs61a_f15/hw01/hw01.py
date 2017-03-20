@@ -9,9 +9,9 @@ def a_plus_abs_b(a, b):
     5
     """
     if b < 0:
-        f = _____
+        f = sub
     else:
-        f = _____
+        f = add
     return f(a, b)
 
 
@@ -29,7 +29,14 @@ def two_of_three(a, b, c):
     50
     """
     "*** YOUR CODE HERE ***"
-
+    if c < a and c < b:
+        return(a**2+b**2)
+    elif b < a and b < c:
+        return(a**2+c**2)
+    elif a < c and a < b:
+        return(b**2+c**2)
+    else:
+        return(a**2+b**2)
 
 def largest_factor(n):
     """Return the largest factor of n*n-1 that is smaller than n.
