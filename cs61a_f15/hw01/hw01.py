@@ -1,5 +1,6 @@
 from operator import add, sub
 
+
 def a_plus_abs_b(a, b):
     """Return a+abs(b), but without calling abs.
 
@@ -9,9 +10,9 @@ def a_plus_abs_b(a, b):
     5
     """
     if b < 0:
-        f = _____
+        f = sub
     else:
-        f = _____
+        f = add
     return f(a, b)
 
 
@@ -30,6 +31,8 @@ def two_of_three(a, b, c):
     """
     "*** YOUR CODE HERE ***"
 
+    return max((a*a + b*b), (b*b + c*c), (c*c + a*a))
+
 
 def largest_factor(n):
     """Return the largest factor of n*n-1 that is smaller than n.
@@ -40,6 +43,17 @@ def largest_factor(n):
     8
     """
     "*** YOUR CODE HERE ***"
+
+    factors = []
+    max_num = n*n - 1
+
+    for x in range(2, max_num):
+        if max_num % x == 0:
+            factors.append(x)
+
+    for x in reversed(factors):
+        if x < n:
+            return x
 
 
 def if_function(condition, true_result, false_result):
@@ -60,6 +74,7 @@ def if_function(condition, true_result, false_result):
     else:
         return false_result
 
+
 def with_if_statement():
     """
     >>> with_if_statement()
@@ -70,14 +85,18 @@ def with_if_statement():
     else:
         return f()
 
+
 def with_if_function():
     return if_function(c(), t(), f())
+
 
 def c():
     "*** YOUR CODE HERE ***"
 
+
 def t():
     "*** YOUR CODE HERE ***"
+
 
 def f():
     "*** YOUR CODE HERE ***"
@@ -100,8 +119,22 @@ def hailstone(n):
     """
     "*** YOUR CODE HERE ***"
 
+    sequence = [n]
+    print(n)
+
+    while n != 1:
+        if n % 2:   # If n is odd
+            n *= 3
+            n += 1
+            sequence.append(n)
+            print(n)
+        else:
+            n //= 2
+            sequence.append(n)
+            print(n)
+    return len(sequence)
+
 
 challenge_question_program = """
 "*** YOUR CODE HERE ***"
 """
-
