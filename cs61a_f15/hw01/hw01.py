@@ -47,6 +47,11 @@ def largest_factor(n):
     8
     """
     "*** YOUR CODE HERE ***"
+    ans = 0
+    for i in range(n):
+        if (n*n-1)%(i+1) == 0:
+            ans = i+1
+    return(ans)
 
 
 def if_function(condition, true_result, false_result):
