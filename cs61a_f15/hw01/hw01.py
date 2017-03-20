@@ -29,6 +29,18 @@ def two_of_three(a, b, c):
     50
     """
     "*** YOUR CODE HERE ***"
+    if a > b:
+        if b > c:
+            return a**2 + b**2
+        else:
+            return a**2 + c**2
+    if a > c:
+        if b > c:
+            return a**2 + b**2
+        else:
+            return a**2 + c**2
+    else:
+        return b**2 + c**2
 
 
 def largest_factor(n):
