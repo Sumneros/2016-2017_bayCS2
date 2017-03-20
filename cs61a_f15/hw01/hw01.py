@@ -9,9 +9,9 @@ def a_plus_abs_b(a, b):
     5
     """
     if b < 0:
-        f = _____
+        f = sub  # ada edit
     else:
-        f = _____
+        f = add  # ada edit
     return f(a, b)
 
 
@@ -28,8 +28,14 @@ def two_of_three(a, b, c):
     >>> two_of_three(5, 5, 5)
     50
     """
-    "*** YOUR CODE HERE ***"
-
+# ada start
+    if a < b and a < c:       # b and c are greatest 
+        return b*b + c*c
+    elif b < a and b < c:     # a and c are greatest
+        return a*a + c*c
+    else:                     # a and b are greatest
+        return a*a + b*b
+# ada end
 
 def largest_factor(n):
     """Return the largest factor of n*n-1 that is smaller than n.
@@ -39,7 +45,12 @@ def largest_factor(n):
     >>> largest_factor(9) # n*n-1 is 80; factors are 1, 2, 4, 5, 8, 10, ...
     8
     """
-    "*** YOUR CODE HERE ***"
+    greatest_factor = ""
+    for i in range(1, n):
+        if n*(n-1) % i == 0:
+            greatest_factor = i
+    return greatest_factor
+            
 
 
 def if_function(condition, true_result, false_result):
