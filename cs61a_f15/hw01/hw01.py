@@ -45,13 +45,14 @@ def largest_factor(n):
     >>> largest_factor(9) # n*n-1 is 80; factors are 1, 2, 4, 5, 8, 10, ...
     8
     """
+# ada start
     greatest_factor = ""
     for i in range(1, n):
         if n*(n-1) % i == 0:
             greatest_factor = i
     return greatest_factor
             
-
+# ada end
 
 def if_function(condition, true_result, false_result):
     """Return true_result if condition is a true value, and
